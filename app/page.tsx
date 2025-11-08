@@ -17,7 +17,7 @@ import { ArrowRight, Calendar, PlayCircle, ShieldCheck, CheckCircle2, LineChart,
  */
 
 const nav = [
-  { label: "Platform", href: "#platform" },
+  { label: "Platform", href: "https://splix-platform-274742124855.us-central1.run.app" },
   { label: "Careers", href: "#careers" },
   { label: "Resources", href: "#resources" },
   { label: "Demo", href: "/schedule" },
@@ -113,9 +113,9 @@ export default function Page() {
           {/* CTA */}
           <div className="flex items-center gap-3">
             <a href="/schedule" className="hidden sm:inline-flex items-center gap-2 text-sm text-[#2F6BFF] font-medium">Schedule demo <Calendar className="w-4 h-4" /></a>
-            <button className="inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-3.5 py-2 shadow hover:brightness-110">
+            <a href="https://splix-platform-274742124855.us-central1.run.app" className="inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-3.5 py-2 shadow hover:brightness-110">
               Try the Platform <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
         </div>
       </header>
