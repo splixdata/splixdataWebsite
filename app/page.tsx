@@ -20,7 +20,7 @@ const nav = [
   { label: "Platform", href: "#platform" },
   { label: "Careers", href: "#careers" },
   { label: "Resources", href: "#resources" },
-  { label: "Demo", href: "#demo" },
+  { label: "Demo", href: "/schedule" },
 ];
 
 const features = [
@@ -112,7 +112,7 @@ export default function Page() {
 
           {/* CTA */}
           <div className="flex items-center gap-3">
-            <a href="#demo" className="hidden sm:inline-flex items-center gap-2 text-sm text-[#2F6BFF] font-medium">Schedule demo <Calendar className="w-4 h-4" /></a>
+            <a href="/schedule" className="hidden sm:inline-flex items-center gap-2 text-sm text-[#2F6BFF] font-medium">Schedule demo <Calendar className="w-4 h-4" /></a>
             <button className="inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-3.5 py-2 shadow hover:brightness-110">
               Try the Platform <ArrowRight className="w-4 h-4" />
             </button>
@@ -129,10 +129,10 @@ export default function Page() {
                 Trusted AI for biopharma decisions.
               </h1>
               <p className="mt-4 text-base sm:text-lg text-neutral-700 max-w-xl">
-                SplixData integrates scientific literature, patents, drug & target databases, pipelines, investment records, and regulatory filings into one trusted knowledge base for fast, defensible insights.
+                Our platform splix complicated biopharma data and integrates scientific literature, patents, drug & target databases, pipelines, investment records, and regulatory filings into one trusted knowledge base for fast, defensible insights.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <a href="#demo" className="inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-4 py-2.5 shadow hover:brightness-110">
+                <a href="/schedule" className="inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-4 py-2.5 shadow hover:brightness-110">
                   Schedule a Demo <Calendar className="w-4 h-4" />
                 </a>
                 <button className="inline-flex items-center gap-2 rounded-lg border border-neutral-300 text-neutral-800 text-sm px-4 py-2.5 bg-white hover:bg-neutral-50">
@@ -272,7 +272,7 @@ export default function Page() {
                 <li className="flex items-center gap-2"><Lock className="w-4 h-4 text-neutral-500" />Private & secure trial environment</li>
                 <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-neutral-500" />White‑glove onboarding</li>
               </ul>
-              <a href="#" className="mt-5 inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-4 py-2.5 shadow hover:brightness-110">Open calendar <Calendar className="w-4 h-4" /></a>
+              <a href="/schedule" className="mt-5 inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-4 py-2.5 shadow hover:brightness-110">Open calendar <Calendar className="w-4 h-4" /></a>
             </div>
             <div className="bg-neutral-50 border border-dashed border-neutral-300 rounded-xl h-64 grid place-items-center text-neutral-500 text-sm">
               Your calendaring embed goes here (Calendly/Re:Schedule)
