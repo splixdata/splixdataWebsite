@@ -59,4 +59,4 @@ timeout: '600s'
 # Use Cloud Build's high-performance machine type
 options:
   machineType: 'E2_HIGHCPU_8'
-  logging: CLOUD_LOGGING_ONLY
+  logging: LEGACY
