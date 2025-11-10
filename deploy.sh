@@ -9,12 +9,14 @@ set -e
 PROJECT_ID="kairex-476321"
 SERVICE_NAME="splixdata-site"
 REGION="us-central1"
+CLOUD_BUILD_REGION="us-central1"
 IMAGE_NAME="gcr.io/${PROJECT_ID}/${SERVICE_NAME}"
 
 echo "🚀 Starting deployment to Google Cloud Run..."
 echo "Project: ${PROJECT_ID}"
 echo "Service: ${SERVICE_NAME}"
 echo "Region: ${REGION}"
+echo "Cloud Build Region: ${CLOUD_BUILD_REGION}"
 echo ""
 
 # Authenticate with Google Cloud
@@ -28,8 +30,8 @@ gcloud services enable run.googleapis.com
 gcloud services enable containerregistry.googleapis.com
 
 # Build the Docker image using Google Cloud Build
-echo "🏗️  Building Docker image with Cloud Build..."
-gcloud builds submit --tag ${IMAGE_NAME}
+echo "🏗️  Building Docker image with Cloud Build in ${CLOUD_BUILD_REGION}..."
+gcloud builds submit --region ${CLOUD_BUILD_REGION} --tag ${IMAGE_NAME}
 
 # Deploy to Cloud Run
 echo "🚢 Deploying to Cloud Run..."
