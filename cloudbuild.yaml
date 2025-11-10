@@ -1,6 +1,9 @@
 # Cloud Build configuration for automated deployment to Cloud Run
 # Triggers on push to main branch
 
+substitutions:
+  _REGION: 'us-central1'
+
 steps:
   # Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
@@ -29,7 +32,7 @@ steps:
       - '--image'
       - 'gcr.io/$PROJECT_ID/splixdata-site:latest'
       - '--region'
-      - 'us-central1'
+      - '$_REGION'
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
