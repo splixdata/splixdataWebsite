@@ -7,9 +7,9 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/splixdata-site:$SHORT_SHA'
+      - 'us-central1-docker.pkg.dev/$PROJECT_ID/splixdata-site/splixdata-site:$SHORT_SHA'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/splixdata-site:latest'
+      - 'us-central1-docker.pkg.dev/$PROJECT_ID/splixdata-site/splixdata-site:latest'
       - '.'
 
   # Push the Docker image to Google Container Registry
@@ -17,7 +17,7 @@ steps:
     args:
       - 'push'
       - '--all-tags'
-      - 'gcr.io/$PROJECT_ID/splixdata-site'
+      - 'us-central1-docker.pkg.dev/$PROJECT_ID/splixdata-site/splixdata-site'
 
   # Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -27,7 +27,7 @@ steps:
       - 'deploy'
       - 'splixdata-site'
       - '--image'
-      - 'gcr.io/$PROJECT_ID/splixdata-site:latest'
+      - 'us-central1-docker.pkg.dev/$PROJECT_ID/splixdata-site/splixdata-site:latest'
       - '--region'
       - 'us-central1'
       - '--platform'
@@ -46,7 +46,7 @@ steps:
 
 # Store images in Google Container Registry
 images:
-  - 'gcr.io/$PROJECT_ID/splixdata-site'
+  - 'us-central1-docker.pkg.dev/$PROJECT_ID/splixdata-site/splixdata-site'
 
 # Build timeout (10 minutes)
 timeout: '600s'

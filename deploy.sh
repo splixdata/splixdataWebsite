@@ -9,7 +9,8 @@ set -e
 PROJECT_ID="kairex-476321"
 SERVICE_NAME="splixdata-site"
 REGION="us-central1"
-IMAGE_NAME="gcr.io/${PROJECT_ID}/${SERVICE_NAME}"
+ARTIFACT_REPO="splixdata-site" # Artifact Registry repo name (Docker format)
+IMAGE_NAME="${REGION}-docker.pkg.dev/${PROJECT_ID}/${ARTIFACT_REPO}/${SERVICE_NAME}"
 
 echo "🚀 Starting deployment to Google Cloud Run..."
 echo "Project: ${PROJECT_ID}"
