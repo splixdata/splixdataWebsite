@@ -129,7 +129,7 @@ export default function Page() {
                 Trusted AI for biopharma decisions.
               </h1>
               <p className="mt-4 text-base sm:text-lg text-neutral-700 max-w-xl">
-                Our platform splix complicated biopharma data and integrates scientific literature, patents, drug & target databases, pipelines, investment records, and regulatory filings into one trusted knowledge base for fast, defensible insights.
+                We build AI empowered platform that curate data and convert it into insight—powering faster and better decisions for the biotech and biopharma industry.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="/schedule" className="inline-flex items-center gap-2 rounded-lg bg-[#2F6BFF] text-white text-sm px-4 py-2.5 shadow hover:brightness-110">
