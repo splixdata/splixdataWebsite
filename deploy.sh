@@ -28,8 +28,10 @@ gcloud services enable run.googleapis.com
 gcloud services enable containerregistry.googleapis.com
 
 # Build the Docker image using Google Cloud Build
-echo "🏗️  Building Docker image with Cloud Build..."
-gcloud builds submit --tag ${IMAGE_NAME}
+echo "🏗️  Building Docker image with Cloud Build (region: ${REGION})..."
+gcloud builds submit \
+  --tag ${IMAGE_NAME} \
+  --region ${REGION}
 
 # Deploy to Cloud Run
 echo "🚢 Deploying to Cloud Run..."
